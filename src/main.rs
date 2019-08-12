@@ -2,7 +2,7 @@ use std::time::{Instant};
 
 const CAPACITY : usize = 100;
 const LOOPS : usize = 1;
-const IN_LOOPS : usize = 50000;
+const IN_LOOPS : usize = 5000000;
 const ALL_LOOPS: usize = 1;
 
 fn main() {
