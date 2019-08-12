@@ -15,7 +15,7 @@ fn main() {
     let vec = arr.to_vec();
 
 
-    for _ in 1..3 {
+    for _ in 0..ALL_LOOPS {
         println!("Zero test: simple array");
         for _ in 1..LOOPS {
             let mut sum = 0;
