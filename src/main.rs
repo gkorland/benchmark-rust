@@ -3,7 +3,7 @@ use std::time::{Instant};
 const CAPACITY : usize = 10000;
 const LOOPS : usize = 10;
 const IN_LOOPS : usize = 50000;
-
+const ALL_LOOPS: usize = 2;
 
 fn main() {
     println!("Starting!");
