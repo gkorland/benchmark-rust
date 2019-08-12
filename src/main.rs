@@ -6,7 +6,7 @@ const IN_LOOPS : usize = 50000;
 
 
 fn main() {
-    println!("Hello, world!");
+    println!("Starting!");
 
     let mut arr = [0; CAPACITY];
     for i in 0..CAPACITY {
@@ -16,7 +16,7 @@ fn main() {
 
 
     for _ in 1..3 {
-        println!("ZERO LOOP");
+        println!("Zero test: simple array");
         for _ in 1..LOOPS {
             let mut sum = 0;
             let now = Instant::now();
@@ -31,7 +31,7 @@ fn main() {
         }
 
 
-        println!("FIRST LOOP");
+        println!("First test: Vec loop with index access");
         for _ in 1..LOOPS {
             let mut sum = 0;
             let now = Instant::now();
@@ -45,7 +45,7 @@ fn main() {
             println!("sum:{} time:{:?}", sum, now.elapsed());
         }
 
-        println!("SECOND LOOP");
+        println!("Second test: Vec iterator loop");
         for _ in 1..LOOPS {
             let mut sum = 0;
             let now = Instant::now();
@@ -59,7 +59,7 @@ fn main() {
             println!("sum:{} time:{:?}", sum, now.elapsed());
         }
 
-        println!("THIRD LOOP");
+        println!("Third test: Vec for_each loop");
         for _ in 1..LOOPS {
             let mut sum = 0;
             let now = Instant::now();
@@ -71,7 +71,7 @@ fn main() {
             println!("sum:{} time:{:?}", sum, now.elapsed());
         }
 
-        println!("FOURTH LOOP");
+        println!("Fourth test: Vec fold loop");
         for _ in 1..LOOPS {
             let mut sum = 0;
             let now = Instant::now();
@@ -81,4 +81,6 @@ fn main() {
             println!("sum:{} time:{:?}", sum, now.elapsed());
         }
     }
+
+    println!("End!");
 }

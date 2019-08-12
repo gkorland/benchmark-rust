@@ -1,5 +1,5 @@
 [package]
-name = "rust-bench"
+name = "benchmark-rust"
 version = "0.1.0"
 authors = ["Guy Korland <gkorland@gmail.com>"]
 edition = "2018"
